@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_note_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/item_bg_color"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    app:contentPadding="10dp">
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:id="@+id/item_note_imgLock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_baseline_lock_24"
+            android:contentDescription="@string/sifreli"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_note_txtBaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_note_imgLock"
+            android:text=""
+            android:textColor="@color/item_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_note_txtNot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_note_txtBaslik"
+            android:text=""
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_below="@id/item_note_txtNot"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/item_note_txtTarih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/item_text_color"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/item_note_checkBox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/custom_check_true"
+                android:button="@null"
+                android:src="@drawable/ic_baseline_check_24"
+                app:buttonCompat="@null" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

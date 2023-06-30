@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "30120610172",
+    "project_id": "tnote-c87c1",
+    "storage_bucket": "tnote-c87c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30120610172:android:ac940c381d1773a1403cf9",
+        "android_client_info": {
+          "package_name": "com.aturan.tnote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30120610172-bnbbgv23taeng71ro2lcsdhk80vh6fhs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aturan.tnote",
+            "certificate_hash": "1d389452a9971ed54367d1945a4233c78a868948"
+          }
+        },
+        {
+          "client_id": "30120610172-mf739mdj5v4kvn0nlamjdh4dtc4lnvui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbQjYeUpoFdbagz1Dq_Q4oTJbSMct4Ekg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30120610172-mf739mdj5v4kvn0nlamjdh4dtc4lnvui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

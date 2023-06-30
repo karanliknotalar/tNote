@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/view_menu_kaydet"
+        android:title="@string/kaydet" />
+
+    <item
+        android:id="@+id/view_menu_sil"
+        android:title="@string/sil" />
+
+</menu>

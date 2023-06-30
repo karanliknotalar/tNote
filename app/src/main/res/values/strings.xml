@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">tNote</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="profil">Profil</string>
+    <string name="geri_git">Geri Git</string>
+    <string name="not_ekle">Not Ekle</string>
+    <string name="cikis_yap">ÇIKIŞ YAP</string>
+    <string name="baslik">Başlık</string>
+    <string name="bir_seyler_yazin">Yazmaya başla</string>
+    <string name="iptal">İptal</string>
+    <string name="tumunu_sec">Tümünü Seç</string>
+    <string name="sil">Sil</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="notlarda_ara">Notlarda ara</string>
+    <string name="ekle">Ekle</string>
+    <string name="tnote">tNote</string>
+    <string name="sifreli">Şifreli</string>
+    <string name="tamam">Tamam</string>
+
+</resources>

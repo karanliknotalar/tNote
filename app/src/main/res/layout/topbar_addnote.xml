@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolTopbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_bg_color">
+
+    <ImageButton
+        android:id="@+id/topbar_addnote_backBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_arrow_back"
+        android:contentDescription="@string/geri_git" />
+
+    <ImageButton
+        android:id="@+id/topbar_addnote_addNoteBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_baseline_add_2"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded"
+        android:contentDescription="@string/ekle" />
+
+</androidx.appcompat.widget.Toolbar>

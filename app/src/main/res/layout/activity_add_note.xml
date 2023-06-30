@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg_color"
+    tools:context=".activity_addNote">
+
+    <include
+        android:id="@+id/addnote_topbar_layout"
+        layout="@layout/topbar_addnote" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addnote_topbar_layout"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/addnote_txtBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_bg_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/baslik"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textColor="@color/item_text_color"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addnote_txtNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/addnote_txtBaslik"
+            android:layout_marginTop="15dp"
+            android:background="@color/white_bg_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:hint="@string/bir_seyler_yazin"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textColor="@color/item_text_color" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

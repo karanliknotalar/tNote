@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg_color"
+    tools:context=".activity_viewNote">
+
+    <include
+        android:id="@+id/viewNote_topbar_layout"
+        layout="@layout/topbar_viewnote" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewNote_topbar_layout"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/viewNote_txtBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_bg_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/baslik"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textColor="@color/item_text_color"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/viewNote_txtNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewNote_txtBaslik"
+            android:layout_marginTop="15dp"
+            android:background="@color/white_bg_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:hint="@string/bir_seyler_yazin"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textColor="@color/item_text_color" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view_acc_cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/cardview_btns_bg_color"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/view_acc_silBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/ic_baseline_delete_24"
+                    android:contentDescription="@string/sil" />
+
+                <ImageButton
+                    android:id="@+id/view_acc_kaydetBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_save"
+                    android:contentDescription="@string/kaydet" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

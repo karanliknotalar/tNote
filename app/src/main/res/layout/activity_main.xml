@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context=".activity_main">
+
+    <include
+        android:id="@+id/main_topbar_layout"
+        layout="@layout/topbar_main" />
+
+    <EditText
+        android:id="@+id/main_acc_searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/main_topbar_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/search_box_bg"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/notlarda_ara"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:lines="1"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_acc_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_acc_searchBox"
+        android:paddingStart="@dimen/recycler_padding"
+        android:paddingEnd="@dimen/recycler_padding" />
+
+    <ImageButton
+        android:id="@+id/main_acc_notEkleBtn"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/eklebtn_bg"
+        android:contentDescription="@string/not_ekle"
+        android:src="@drawable/ic_baseline_add_24" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_acc_cardView"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/cardview_btns_bg_color"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/main_acc_silBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_baseline_delete_24"
+                android:contentDescription="@string/ekle" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

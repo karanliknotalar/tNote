@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="btns_color">#696969</color>
+    <color name="cardview_btns_bg_color">#2E2E2E</color>
+    <color name="action_ekle_btn_color">#D50000</color>
+    <color name="search_bg_color">#2E2E2E</color>
+    <color name="white_bg_color">#FF000000</color>
+    <color name="main_bg_color">#FF000000</color>
+    <color name="item_text_color">#708090</color>
+    <color name="item_bg_color">#2E2E2E</color>
+    <color name="item_bg_color_selected">#171717</color>
+    <color name="all_selected_icon_color">#FF0000</color>
+    <color name="check_false_color">#696969</color>
+    <color name="sil_btn_icon_color">#FF0000</color>
+    <color name="sifreli_veri_item_color">#FF0000</color>
+    <color name="dialog_bg_color">#171717</color>
+</resources>
